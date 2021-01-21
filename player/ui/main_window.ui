@@ -71,11 +71,7 @@
        </widget>
       </item>
       <item>
-       <widget class="QLineEdit" name="sprite_start_edit">
-        <property name="text">
-         <string>1</string>
-        </property>
-       </widget>
+       <widget class="QSpinBox" name="sprite_start_spin"/>
       </item>
       <item>
        <widget class="QLabel" name="label_3">
@@ -85,7 +81,7 @@
        </widget>
       </item>
       <item>
-       <widget class="QLineEdit" name="sprite_end_edit">
+       <widget class="QLineEdit" name="sprite_end_spin">
         <property name="text">
          <string>9</string>
         </property>

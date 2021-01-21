@@ -52,20 +52,20 @@ class Ui_MainWindow(object):
 
         self.verticalLayout.addWidget(self.label_2)
 
-        self.sprite_start_edit = QLineEdit(self.centralwidget)
-        self.sprite_start_edit.setObjectName(u"sprite_start_edit")
+        self.sprite_start_spin = QSpinBox(self.centralwidget)
+        self.sprite_start_spin.setObjectName(u"sprite_start_spin")
 
-        self.verticalLayout.addWidget(self.sprite_start_edit)
+        self.verticalLayout.addWidget(self.sprite_start_spin)
 
         self.label_3 = QLabel(self.centralwidget)
         self.label_3.setObjectName(u"label_3")
 
         self.verticalLayout.addWidget(self.label_3)
 
-        self.sprite_end_edit = QLineEdit(self.centralwidget)
-        self.sprite_end_edit.setObjectName(u"sprite_end_edit")
+        self.sprite_end_spin = QLineEdit(self.centralwidget)
+        self.sprite_end_spin.setObjectName(u"sprite_end_spin")
 
-        self.verticalLayout.addWidget(self.sprite_end_edit)
+        self.verticalLayout.addWidget(self.sprite_end_spin)
 
         self.label_4 = QLabel(self.centralwidget)
         self.label_4.setObjectName(u"label_4")
@@ -120,9 +120,8 @@ class Ui_MainWindow(object):
         self.label.setText(QCoreApplication.translate("MainWindow", u"Icon Index", None))
         self.icon_index_edit.setText(QCoreApplication.translate("MainWindow", u"74", None))
         self.label_2.setText(QCoreApplication.translate("MainWindow", u"Start Sprite", None))
-        self.sprite_start_edit.setText(QCoreApplication.translate("MainWindow", u"1", None))
         self.label_3.setText(QCoreApplication.translate("MainWindow", u"End Sprite", None))
-        self.sprite_end_edit.setText(QCoreApplication.translate("MainWindow", u"9", None))
+        self.sprite_end_spin.setText(QCoreApplication.translate("MainWindow", u"9", None))
         self.label_4.setText(QCoreApplication.translate("MainWindow", u"FPS", None))
         self.fps_edit.setText(QCoreApplication.translate("MainWindow", u"5", None))
         self.animate_button.setText(QCoreApplication.translate("MainWindow", u"Animate", None))
