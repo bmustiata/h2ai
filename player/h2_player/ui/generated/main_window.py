@@ -42,40 +42,43 @@ class Ui_MainWindow(object):
 
         self.verticalLayout.addWidget(self.label)
 
-        self.icon_index_edit = QLineEdit(self.centralwidget)
-        self.icon_index_edit.setObjectName(u"icon_index_edit")
+        self.icon_index_spinbox = QSpinBox(self.centralwidget)
+        self.icon_index_spinbox.setObjectName(u"icon_index_spinbox")
+        self.icon_index_spinbox.setMaximum(1000)
+        self.icon_index_spinbox.setValue(74)
 
-        self.verticalLayout.addWidget(self.icon_index_edit)
+        self.verticalLayout.addWidget(self.icon_index_spinbox)
 
         self.label_2 = QLabel(self.centralwidget)
         self.label_2.setObjectName(u"label_2")
 
         self.verticalLayout.addWidget(self.label_2)
 
-        self.sprite_start_spin = QSpinBox(self.centralwidget)
-        self.sprite_start_spin.setObjectName(u"sprite_start_spin")
+        self.sprite_start_spinbox = QSpinBox(self.centralwidget)
+        self.sprite_start_spinbox.setObjectName(u"sprite_start_spinbox")
 
-        self.verticalLayout.addWidget(self.sprite_start_spin)
+        self.verticalLayout.addWidget(self.sprite_start_spinbox)
 
         self.label_3 = QLabel(self.centralwidget)
         self.label_3.setObjectName(u"label_3")
 
         self.verticalLayout.addWidget(self.label_3)
 
-        self.sprite_end_spin = QLineEdit(self.centralwidget)
-        self.sprite_end_spin.setObjectName(u"sprite_end_spin")
+        self.sprite_end_spinbox = QSpinBox(self.centralwidget)
+        self.sprite_end_spinbox.setObjectName(u"sprite_end_spinbox")
 
-        self.verticalLayout.addWidget(self.sprite_end_spin)
+        self.verticalLayout.addWidget(self.sprite_end_spinbox)
 
         self.label_4 = QLabel(self.centralwidget)
         self.label_4.setObjectName(u"label_4")
 
         self.verticalLayout.addWidget(self.label_4)
 
-        self.fps_edit = QLineEdit(self.centralwidget)
-        self.fps_edit.setObjectName(u"fps_edit")
+        self.fps_spinbox = QDoubleSpinBox(self.centralwidget)
+        self.fps_spinbox.setObjectName(u"fps_spinbox")
+        self.fps_spinbox.setValue(5.000000000000000)
 
-        self.verticalLayout.addWidget(self.fps_edit)
+        self.verticalLayout.addWidget(self.fps_spinbox)
 
         self.verticalSpacer = QSpacerItem(20, 40, QSizePolicy.Minimum, QSizePolicy.Expanding)
 
@@ -118,12 +121,9 @@ class Ui_MainWindow(object):
         self.groupBox.setTitle(QCoreApplication.translate("MainWindow", u"Icon Rendering", None))
         self.icon_label.setText(QCoreApplication.translate("MainWindow", u"icon", None))
         self.label.setText(QCoreApplication.translate("MainWindow", u"Icon Index", None))
-        self.icon_index_edit.setText(QCoreApplication.translate("MainWindow", u"74", None))
         self.label_2.setText(QCoreApplication.translate("MainWindow", u"Start Sprite", None))
         self.label_3.setText(QCoreApplication.translate("MainWindow", u"End Sprite", None))
-        self.sprite_end_spin.setText(QCoreApplication.translate("MainWindow", u"9", None))
         self.label_4.setText(QCoreApplication.translate("MainWindow", u"FPS", None))
-        self.fps_edit.setText(QCoreApplication.translate("MainWindow", u"5", None))
         self.animate_button.setText(QCoreApplication.translate("MainWindow", u"Animate", None))
     # retranslateUi
 

@@ -1,1 +1,3 @@
 mopyx
+mopyx_pyside2
+pyside2
