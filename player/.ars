@@ -1,0 +1,4 @@
+arg0: h2_player
+h2_player: true
+templates:
+- py3/pyside2
