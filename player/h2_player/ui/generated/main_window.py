@@ -17,7 +17,7 @@ class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         if not MainWindow.objectName():
             MainWindow.setObjectName(u"MainWindow")
-        MainWindow.resize(565, 417)
+        MainWindow.resize(613, 574)
         self.actionQuit = QAction(MainWindow)
         self.actionQuit.setObjectName(u"actionQuit")
         self.centralwidget = QWidget(MainWindow)
@@ -66,6 +66,7 @@ class Ui_MainWindow(object):
 
         self.sprite_end_spinbox = QSpinBox(self.centralwidget)
         self.sprite_end_spinbox.setObjectName(u"sprite_end_spinbox")
+        self.sprite_end_spinbox.setValue(9)
 
         self.verticalLayout.addWidget(self.sprite_end_spinbox)
 
@@ -84,19 +85,10 @@ class Ui_MainWindow(object):
 
         self.verticalLayout.addItem(self.verticalSpacer)
 
-        self.horizontalLayout = QHBoxLayout()
-        self.horizontalLayout.setObjectName(u"horizontalLayout")
-        self.horizontalSpacer = QSpacerItem(40, 20, QSizePolicy.Expanding, QSizePolicy.Minimum)
+        self.current_frame_label = QLabel(self.centralwidget)
+        self.current_frame_label.setObjectName(u"current_frame_label")
 
-        self.horizontalLayout.addItem(self.horizontalSpacer)
-
-        self.animate_button = QPushButton(self.centralwidget)
-        self.animate_button.setObjectName(u"animate_button")
-
-        self.horizontalLayout.addWidget(self.animate_button)
-
-
-        self.verticalLayout.addLayout(self.horizontalLayout)
+        self.verticalLayout.addWidget(self.current_frame_label)
 
 
         self.horizontalLayout_2.addLayout(self.verticalLayout)
@@ -104,7 +96,7 @@ class Ui_MainWindow(object):
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QMenuBar(MainWindow)
         self.menubar.setObjectName(u"menubar")
-        self.menubar.setGeometry(QRect(0, 0, 565, 22))
+        self.menubar.setGeometry(QRect(0, 0, 613, 22))
         MainWindow.setMenuBar(self.menubar)
         self.statusbar = QStatusBar(MainWindow)
         self.statusbar.setObjectName(u"statusbar")
@@ -124,6 +116,6 @@ class Ui_MainWindow(object):
         self.label_2.setText(QCoreApplication.translate("MainWindow", u"Start Sprite", None))
         self.label_3.setText(QCoreApplication.translate("MainWindow", u"End Sprite", None))
         self.label_4.setText(QCoreApplication.translate("MainWindow", u"FPS", None))
-        self.animate_button.setText(QCoreApplication.translate("MainWindow", u"Animate", None))
+        self.current_frame_label.setText(QCoreApplication.translate("MainWindow", u"1", None))
     # retranslateUi
 

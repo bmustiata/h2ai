@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>565</width>
-    <height>417</height>
+    <width>613</width>
+    <height>574</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -117,6 +117,13 @@
         </property>
        </spacer>
       </item>
+      <item>
+       <widget class="QLabel" name="current_frame_label">
+        <property name="text">
+         <string>1</string>
+        </property>
+       </widget>
+      </item>
      </layout>
     </item>
    </layout>
@@ -126,7 +133,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>565</width>
+     <width>613</width>
      <height>22</height>
     </rect>
    </property>
